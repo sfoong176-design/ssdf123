@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인천 하수구 막힘 해결 전문 | 신속 출동</title>
+    <!-- 폰트 및 아이콘 불러오기 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 기본 스타일 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Malgun Gothic', dotum, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 헤더 스타일 */
+        header {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header .badge {
+            background-color: #ffc107;
+            color: #000;
+            padding: 5px 15px;
+            font-weight: bold;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            word-break: keep-all;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* 메인 컨테이너 */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        /* 카드 공통 스타일 */
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .card h2 {
+            font-size: 1.4rem;
+            color: #0056b3;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 10px;
+        }
+
+        /* 서비스 목록 스타일 */
+        .service-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            text-align: left;
+        }
+
+        .service-item {
+            background: #f1f3f5;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .service-item i {
+            color: #0056b3;
+        }
+
+        /* 전화하기 버튼 섹션 */
+        .call-section {
+            background: #fff3cd;
+            border: 2px solid #ffeeba;
+        }
+
+        .call-section p {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #856404;
+        }
+
+        .btn-call {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: #dc3545;
+            color: white;
+            text-decoration: none;
+            font-size: 1.6rem;
+            font-weight: bold;
+            padding: 15px;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(220, 53, 69, 0.4);
+            transition: transform 0.2s;
+            animation: pulse 2s infinite;
+        }
+
+        .btn-call:active {
+            transform: scale(0.98);
+        }
+
+        /* 카카오맵 영역 */
+        #map {
+            width: 100%;
+            height: 350px;
+            border-radius: 8px;
+            margin-top: 10px;
+            background-color: #eee;
+        }
+
+        /* 하단 정보 */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        /* 전화 버튼 두근거리는 애니메이션 */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+
+        /* 모바일 대응 */
+        @media (max-width: 480px) {
+            header h1 { font-size: 1.8rem; }
+            .service-list { grid-template-columns: 1fr; }
+            .btn-call { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="badge">인천 전 지역 30분 긴급출동</div>
+        <h1>인천 하수구·변기·싱크대 막힘</h1>
+        <p>못 뚫으면 0원! 첨단 장비 보유 전문업체</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="card call-section">
+            <p><i class="fa-solid fa-clock"></i> 24시간 연중무휴 상담 가능!</p>
+            <a href="tel:01055060040" class="btn-call">
+                <i class="fa-solid fa-phone-flip"></i> 010-5506-0040
+            </a>
+        </div>
+
+        <div class="card">
+            <h2><i class="fa-solid fa-wrench"></i> 전문 서비스 분야</h2>
+            <div class="service-list">
+                <div class="service-item"><i class="fa-solid fa-circle-check"></i> 하수구/고압세척</div>
+                <div class="service-item"><i class="fa-solid fa-circle-check"></i> 싱크대 역류 해결</div>
+                <div class="service-item"><i class="fa-solid fa-circle-check"></i> 변기 막힘 탈탈 털기</div>
+                <div class="service-item"><i class="fa-solid fa-circle-check"></i> 배관 내시경 촬영</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><i class="fa-solid fa-location-dot"></i> 서비스 출동 지역 (인천)</h2>
+            <p style="margin-bottom: 10px; font-size: 0.95rem; color:#555;">인천 전 지역 및 인근 부근 신속히 찾아갑니다.</p>
+            <div id="map"></div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>인천 하수구 마스터 | 대표번호: 010-5506-0040</p>
+        <p style="margin-top: 5px; font-size: 0.8rem;">© 2026 하수구 해결 마스터. All Rights Reserved.</p>
+    </footer>
+
+    <!-- 수정한 부분 1: 주소 뒤에 &autoload=false 추가 (시간차 에러 방지 핵심) -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=YOUR_KAKAO_MAP_API_KEY&libraries=services&autoload=false"></script>
+    
+    <script>
+        // 수정한 부분 2: 카카오 지도 안전 로딩 로직 적용
+        function initMap() {
+            const container = document.getElementById('map');
+            const options = {
+                center: new kakao.maps.LatLng(37.4563, 126.7052), // 인천 중심 좌표
+                level: 7
+            };
+            const map = new kakao.maps.Map(container, options);
+
+            // 마커 표시
+            const markerPosition  = new kakao.maps.LatLng(37.4563, 126.7052); 
+            const marker = new kakao.maps.Marker({
+                position: markerPosition
+            });
+            marker.setMap(map);
+        }
+
+        // DOM 로드가 완료된 시점에 실행하여 에러 발생 원천 차단
+        window.addEventListener('DOMContentLoaded', function() {
+            if (typeof kakao !== 'undefined' && kakao.maps) {
+                // 스크립트 로드가 완벽히 끝난 후 초기화 함수 실행
+                kakao.maps.load(initMap);
+            } else {
+                // API 키 미등록 또는 스크립트 미호출 시 대체 텍스트 표시
+                document.getElementById('map').innerHTML = 
+                    `<div style="display:flex; justify-content:center; align-items:center; text-align:center; height:100%; color:#666; font-weight:bold; background:#e9ecef; border-radius:8px; padding: 20px; line-height:1.5;">
+                        [인천 전지역 출동 가능]<br><span style="font-weight:normal; font-size:0.85rem; color:#888;">코드 하단의 YOUR_KAKAO_MAP_API_KEY를<br>실제 발급받은 키로 변경하면 지도가 표시됩니다.</span>
+                     </div>`;
+            }
+        });
+    </script>
+</body>
+</html>
